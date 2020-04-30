@@ -88,7 +88,7 @@
     <script>
       window.addEventListener("load", function load() {
         const loader = document.getElementById("loader");
-        setTimeout(function () {
+        setTimesout(function () {
           loader.classList.add("fadeOut");
         }, 300);
       });
@@ -152,32 +152,30 @@
               </a>
               <ul class="dropdown-menu">
                 <!-- <li>
-      <a class="sidebar-link" href="basic-table.html"
-        >Basic Table</a
-      >
-    </li> -->
-                <li>
-                  <a class="sidebar-link" href="validMember.html">유효 회원</a>
-                </li>
-                <li>
-                  <a class="sidebar-link" href="invalidMember.html"
-                    >만료 회원</a
+                  <a class="sidebar-link" href="basic-table.html"
+                    >Basic Table</a
                   >
+                </li> -->
+                <li>
+                  <a class="sidebar-link" href="datatable.html">유효 회원</a>
                 </li>
                 <li>
-                  <a class="sidebar-link" href="readyMember.html"
+                  <a class="sidebar-link" href="datatable.html">만료 회원</a>
+                </li>
+                <li>
+                  <a class="sidebar-link" href="datatable.html"
                     >코치배정 대기회원</a
                   >
                 </li>
                 <li>
-                  <a class="sidebar-link" href="registMember.html">회원 등록</a>
+                  <a class="sidebar-link" href="datatable.html">회원 등록</a>
                 </li>
               </ul>
             </li>
 
             <!-- 코치 정보 -->
             <li class="nav-item dropdown">
-              <a class="sidebar-link" href="coachmanager.html">
+              <a class="sidebar-link" href="ui.html">
                 <span class="icon-holder">
                   <i class="c-orange-500 ti-layout-list-thumb"></i>
                 </span>
@@ -198,12 +196,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="sidebar-link" href="lessonManager.html"
-                    >레슨 관리</a
-                  >
+                  <a class="sidebar-link" href="datatable.html">레슨 관리</a>
                 </li>
                 <li>
-                  <a class="sidebar-link" href="lessonSchedule.html"
+                  <a class="sidebar-link" href="datatable.html"
                     >레슨 예약 현황</a
                   >
                 </li>
@@ -212,7 +208,7 @@
 
             <!-- 공지사항 -->
             <li class="nav-item dropdown">
-              <a class="sidebar-link" href="Notice.html">
+              <a class="sidebar-link" href="ui.html">
                 <span class="icon-holder">
                   <i class="c-deep-purple-500 ti-comment-alt"></i>
                 </span>
@@ -222,7 +218,7 @@
 
             <!-- 설정 -->
             <li class="nav-item dropdown">
-              <a class="sidebar-link" href="Setting.html">
+              <a class="sidebar-link" href="ui.html">
                 <span class="icon-holder">
                   <i class="c-teal-500 ti-view-list-alt"></i>
                 </span>
@@ -622,8 +618,8 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
-                  <div id="full-calendar"></div>
-                </div>
+                  <!-- <div id="full-calendar"></div>
+                </div> -->
               </div>
               <div class="modal fade" id="calendar-edit">
                 <div class="modal-dialog" role="document">

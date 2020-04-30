@@ -60,6 +60,7 @@
     </style>
     <link href="style.css" rel="stylesheet" />
   </head>
+
   <body class="app">
     <div id="loader"><div class="spinner"></div></div>
     <script>
@@ -70,6 +71,7 @@
         }, 300);
       });
     </script>
+
     <div>
       <div class="sidebar">
         <div class="sidebar-inner">
@@ -98,7 +100,10 @@
               </div>
             </div>
           </div>
+
+          <!-- 사이드 메뉴바 -->
           <ul class="sidebar-menu scrollable pos-r">
+            <!-- 스케줄러 -->
             <li class="nav-item">
               <a class="sidebar-link" href="calendar.html"
                 ><span class="icon-holder"
@@ -106,6 +111,8 @@
                 ><span class="title">수업 스케줄러</span></a
               >
             </li>
+
+            <!-- 회원현황 -->
             <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="javascript:void(0);"
                 ><span class="icon-holder"
@@ -132,6 +139,8 @@
                 </li>
               </ul>
             </li>
+
+            <!-- 코치 -->
             <li class="nav-item dropdown">
               <a class="sidebar-link" href="coachmanager.html"
                 ><span class="icon-holder"
@@ -139,6 +148,8 @@
                 ><span class="title">코치</span></a
               >
             </li>
+
+            <!-- 레슨현황 -->
             <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="javascript:void(0);"
                 ><span class="icon-holder"
@@ -159,6 +170,8 @@
                 </li>
               </ul>
             </li>
+
+            <!-- 공지사항 -->
             <li class="nav-item dropdown">
               <a class="sidebar-link" href="Notice.html"
                 ><span class="icon-holder"
@@ -166,6 +179,8 @@
                 ><span class="title">공지사항</span></a
               >
             </li>
+
+            <!-- 설정 -->
             <li class="nav-item dropdown">
               <a class="sidebar-link" href="Setting.html"
                 ><span class="icon-holder"
@@ -176,96 +191,11 @@
           </ul>
         </div>
       </div>
+
       <div class="page-container">
         <div class="header navbar"></div>
         <main class="main-content bgc-grey-100">
-          <div id="mainContent">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- 
-
-
-
-
-                    **********컨텐츠 영역 **********
-                   
-                  
-                  
-                  
-                  
-                --></div>
-              </div>
-              <div class="modal fade" id="calendar-edit">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="bd p-15"><h5 class="m-0">Add Event</h5></div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-group">
-                          <label class="fw-500">Event title</label>
-                          <input class="form-control bdc-grey-200" />
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="fw-500">Start</label>
-                            <div class="timepicker-input input-icon form-group">
-                              <div class="input-group">
-                                <div
-                                  class="input-group-addon bgc-white bd bdwR-0"
-                                >
-                                  <i class="ti-calendar"></i>
-                                </div>
-                                <input
-                                  type="text"
-                                  class="form-control bdc-grey-200 start-date"
-                                  placeholder="Datepicker"
-                                  data-provide="datepicker"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <label class="fw-500">End</label>
-                            <div class="timepicker-input input-icon form-group">
-                              <div class="input-group">
-                                <div
-                                  class="input-group-addon bgc-white bd bdwR-0"
-                                >
-                                  <i class="ti-calendar"></i>
-                                </div>
-                                <input
-                                  type="text"
-                                  class="form-control bdc-grey-200 end-date"
-                                  placeholder="Datepicker"
-                                  data-provide="datepicker"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="fw-500">Event title</label>
-                          <textarea
-                            class="form-control bdc-grey-200"
-                            rows="5"
-                          ></textarea>
-                        </div>
-                        <div class="text-right">
-                          <button
-                            class="btn btn-primary cur-p"
-                            data-dismiss="modal"
-                          >
-                            Done
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="mainContent"></div>
         </main>
         <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
           <span
